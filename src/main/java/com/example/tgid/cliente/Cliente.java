@@ -24,5 +24,10 @@ public class Cliente {
         return cpf;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+
     // Getters e setters
 }

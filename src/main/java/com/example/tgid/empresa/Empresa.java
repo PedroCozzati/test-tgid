@@ -32,7 +32,6 @@ public class Empresa {
     }
 
     public Empresa() {
-        // Construtor padrão vazio
     }
 
     
@@ -48,11 +47,12 @@ public class Empresa {
         return cnpj;
     }
 
+    public Long getId() {
+        return id;
+    }
+
     public double getSaldo() {
         return saldo;
     }
 
- 
-
-    // Método para enviar callback
 }
