@@ -15,7 +15,6 @@ public class Transacao {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private TipoTransacaoEnum tipo;
     private double valor;
 
     @ManyToOne
@@ -24,14 +23,19 @@ public class Transacao {
     @ManyToOne
     public Cliente cliente;
 
+    public Transacao() {
+        
+    }
+
+
     public Transacao(TipoTransacaoEnum tipo, double valor) {
-        this.tipo = tipo;
+        // this.tipo = tipo;
         this.valor = valor;
     }
 
-    public TipoTransacaoEnum getTipo() {
-        return tipo;
-    }
+    // public TipoTransacaoEnum getTipo() {
+    //     return tipo;
+    // }
 
     public double getValor() {
         return valor;

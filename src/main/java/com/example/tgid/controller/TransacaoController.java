@@ -29,4 +29,6 @@ public class TransacaoController {
         Transacao novaTransacao = transacaoService.createTransacao(transacao, clienteId, empresaId);
         return new ResponseEntity<>(novaTransacao, HttpStatus.CREATED);
     }
+
+   
 }
